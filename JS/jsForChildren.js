@@ -184,3 +184,26 @@ const phrases = [
 console.log(phrases[Math.floor(Math.random() * 5)]);
 //maybe tea?
 console.log(phrases[Math.floor(Math.random() * 5)]);
+
+const randomBodyParts = ['Face', 'Nose', 'Hair', 'Arm', 'Legs'];
+const randomAdjectives = ['Smelly', 'Boring', 'Stupid'];
+const randomWords = ['Fly', 'Marmot', 'Stick', 'Monkey', 'Rat'];
+const randomAnimalsBodyParts = ['Hoof', 'Tusk', 'Tail'];
+
+const randomBodyPart =
+  randomBodyParts[Math.floor(Math.random() * randomBodyParts.length)];
+const randomAdjective =
+  randomAdjectives[Math.floor(Math.random() * randomAdjectives.length)];
+const randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
+const randomAnimalBodyPart =
+  randomAnimalsBodyParts[
+    Math.floor(Math.random() * randomAnimalsBodyParts.length)
+  ];
+
+const randomInsult = `Your ${randomBodyPart} is like a ${randomAdjective} ${randomWord}!!!`;
+const randomInsultBetter = `Your ${randomBodyPart} is more ${randomAdjective} than a ${randomWord}'s ${randomAnimalBodyPart}`;
+console.log(randomInsult);
+console.log(randomInsultBetter);
+
+const arrNumberBigest = [3, 2, 1];
+console.log(arrNumberBigest.join(' is bigger then '));
